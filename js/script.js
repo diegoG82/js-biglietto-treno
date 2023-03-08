@@ -50,4 +50,4 @@ console.log (ticketPrice);
 
 // OUTPUT
 
-document.getElementById("finalprice").innerHTML = ticketPrice;
+document.getElementById("finalprice").innerHTML = `il costo del biglietto è di: ${ticketPrice}€`;
