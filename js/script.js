@@ -23,11 +23,11 @@ console.log (prezzoDelBigliettoInt)
 
 // LOGICA
 
-// Se l'eta' del passeggero e' sotto i 18 anni avra' uno sconto del 20% 
+// Se l'eta' del passeggero e' sotto i 18 anni avra' uno sconto del 20% quindi paghera' l'80% del totale.
 
 const discountMinor = (0.80);
 
-// Se il passeggero ha piu' di 65 anni avra' uno sconto del 40% 
+// Se il passeggero ha piu' di 65 anni avra' uno sconto del 40% quindi paghera' il 60% del totale.
 
 const discountSenior = (0.60);
 
