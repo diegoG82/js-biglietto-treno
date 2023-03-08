@@ -23,9 +23,31 @@ console.log (prezzoDelBigliettoInt)
 
 // LOGICA
 
-// Se l'eta' del passeggero e' sotto i 18 anni avra' uno sconto del 20% sul prezzo del biglietto intero
+// Se l'eta' del passeggero e' sotto i 18 anni avra' uno sconto del 20% 
 
-// Se il passeggero ha piu' di 65 anni avra' uno sconto del 40% sul prezzo del biglietto intero
+const discountMinor = (0.80);
+
+// Se il passeggero ha piu' di 65 anni avra' uno sconto del 40% 
+
+const discountSenior = (0.60);
+
+// Calcolo costo biglietto
+
+let ticketPrice =""
+
+if (age < 18 ){
+    ticketPrice = (prezzoDelBigliettoInt * discountMinor).toFixed(2);
+}
+else if (age >= 65){
+    ticketPrice = (prezzoDelBigliettoInt * discountSenior).toFixed(2);
+}
+else{
+    ticketPrice = prezzoDelBigliettoInt.toFixed(2);
+}
+
+console.log (ticketPrice);
+
 
 // OUTPUT
 
+document.getElementById("finalprice").innerHTML = ticketPrice;
