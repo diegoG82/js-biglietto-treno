@@ -16,7 +16,7 @@ const kmDaFare = parseInt (prompt ("quanti km devi fare?"));
 const age = parseInt (prompt ("Quanti anni hai?"));
 console.log (kmDaFare, age);
 
-// Calcolo il prezzo intero del biglietto intero
+// Calcolo il prezzo del biglietto intero
 
 const prezzoDelBigliettoInt = kmDaFare * 0.21
 console.log (prezzoDelBigliettoInt)
@@ -27,7 +27,7 @@ console.log (prezzoDelBigliettoInt)
 
 const discountMinor = (0.80);
 
-// Se il passeggero ha piu' di 65 anni avra' uno sconto del 40% quindi paghera' il 60% del totale.
+// Se il passeggero ha 65 anni o piu' avra' uno sconto del 40% quindi paghera' il 60% del totale.
 
 const discountSenior = (0.60);
 
