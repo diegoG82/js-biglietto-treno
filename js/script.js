@@ -25,25 +25,25 @@ console.log (prezzoDelBigliettoInt)
 
 // Se l'eta' del passeggero e' sotto i 18 anni avra' uno sconto del 20% quindi paghera' l'80% del totale.
 
-const discountMinor = (0.80);
+// const discountMinor = (0.80);
 
 // Se il passeggero ha 65 anni o piu' avra' uno sconto del 40% quindi paghera' il 60% del totale.
 
-const discountSenior = (0.60);
+// const discountSenior = (0.60);
 
 // Calcolo costo biglietto
 
-let ticketPrice =""
+let ticketPrice = prezzoDelBigliettoInt
 
 if (age < 18 ){
-    ticketPrice = (prezzoDelBigliettoInt * discountMinor).toFixed(2);
+    ticketPrice = (prezzoDelBigliettoInt * 20 / 100).toFixed(2);
 }
 else if (age >= 65){
-    ticketPrice = (prezzoDelBigliettoInt * discountSenior).toFixed(2);
+    ticketPrice = (prezzoDelBigliettoInt * 40 / 100).toFixed(2);
 }
-else{
-    ticketPrice = prezzoDelBigliettoInt.toFixed(2);
-}
+// else{
+//     ticketPrice = prezzoDelBigliettoInt.toFixed(2);
+// }
 
 console.log (ticketPrice);
 
